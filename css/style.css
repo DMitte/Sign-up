@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-image: url("../img/bg-intro-mobile.png") , linear-gradient(hsl(0, 100%, 74%),hsl(0, 100%, 74%));
+    font-family: 'Poppins', sans-serif;
+}
+.textos{
+    padding-top: 95px;
+}
+.textos h1{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.textos p{
+    padding: 0 5%;
+}
+
+.card-try{
+    background: hsl(248, 32%, 49%);
+    padding: 20px 15%;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 7px rgba(4, 4, 4, 0.18);
+    margin-top: 53px;
+}
+.card-try h2{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .9;
+}
+
+/*Formulario*/
+.formulario{
+    background: white;
+    width: 85%;
+    padding: 15px 25px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 7px rgba(4, 4, 4, 0.18);
+    margin-top: 27px;
+}
+.formulario form input{
+    width: 100%;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 5px;
+}
+.formulario form input::placeholder{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.62);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.formulario form .boton-submit{
+    background: hsl(154, 59%, 51%);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 13px 0;
+    box-shadow: 0 4px rgba(62, 179, 127, 0.67);
+}
+.formulario p{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 10px;
+    padding: 0px 18px;
+    color: hsl(246, 25%, 77%);
+
+}
+.formulario p strong{
+    color: hsl(0, 100%, 74%);
+}
+
+/*Resposive*/
+
+/*desktop*/
+@media (min-width: 992px){
+    body{
+        background-image: url("../img/bg-intro-desktop.png") , linear-gradient(hsl(0, 100%, 74%),hsl(0, 100%, 74%));
+    }
+    .textos{
+        margin-top: 15%;
+        padding-left: 65px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textos p{
+        padding: 0;
+    }
+    .card-try{
+        margin-top: 20%;
+        padding: 20px 10%;
+    }
+    .formulario{
+        padding: 25px 40px;
+    }
+    .formulario p{
+        font-size: 9px;
+        margin-top: 15px;
+        padding: 0px 5px;
+        color: hsl(246, 25%, 77%);
+    }
+    .formulario p strong{
+        font-weight: 800;
+    }
+}
+
