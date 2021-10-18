@@ -47,6 +47,14 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.38);
     border-radius: 5px;
 }
+.formulario form input:focus{
+    border-color: hsl(248, 32%, 49%);
+    box-shadow: none;
+    outline: none;
+    color: hsl(249, 10%, 26%);
+    font-weight: 700;
+    font-size: 15px;
+}
 .formulario form input::placeholder{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.62);
@@ -110,3 +118,21 @@ body{
     }
 }
 
+/*errores*/
+label.error{
+    color:hsl(0, 100%, 74%);
+    font-size: 11px;
+    float: right;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+.formulario form input.error{
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url("../img/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 10px;
+}
+.formulario form input.error::placeholder{
+    color: transparent;
+}
